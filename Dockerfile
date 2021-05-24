@@ -11,7 +11,7 @@ ENV PATH="/root/.nvm/versions/node/v${NODE_VERSION}/bin/:${PATH}"
 RUN node --version
 RUN npm --version
 RUN npm install -g log.io
-VOLUME /root/.log.io
+COPY server.json /root/.log.io/server.json
 EXPOSE 6688 6689
 ENTRYPOINT log.io-server
 

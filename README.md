@@ -8,8 +8,8 @@ Ports:
 6689 TCP - Listener
 
 
-Volumes:
+Config at /root/.log.io/server.json
 
-/root/.log.io/  - Config File (server.json)
+
 
 
